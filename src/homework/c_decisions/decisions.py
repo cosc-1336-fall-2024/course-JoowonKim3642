@@ -5,7 +5,9 @@ def get_options_ratio(option, total):
     return ratio
 
 def get_faculty_rating(ratio):
-    if ratio >= .9 and ratio <1:
+    if ratio >=1:
+        return "Total should be larger than option"
+    elif ratio >= .9:
         return "Excellent"
     elif ratio > .8:
         return "Very Good"
